@@ -8,7 +8,7 @@
     --card-bg: rgba(30, 32, 38, 0.7);
     --card-border: rgba(255, 255, 255, 0.1);
     --input-bg: rgba(0, 0, 0, 0.3);
-    --font-main: 'Outfit', sans-serif;
+    --font-main: "Outfit", sans-serif;
     --transition-speed: 0.3s;
 }
 
@@ -115,11 +115,6 @@ header {
     margin-bottom: 2rem;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -162,7 +157,7 @@ h1 {
 
 .grid-inputs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 15px;
 }
 
@@ -268,7 +263,9 @@ input {
     font-size: 1rem;
     font-family: inherit;
     outline: none;
-    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+    transition:
+        border-color var(--transition-speed),
+        box-shadow var(--transition-speed);
 }
 
 input:focus {
@@ -294,7 +291,9 @@ small {
     font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
 }
 
 .primary-btn:hover {
